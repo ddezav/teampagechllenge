@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1">
+	<title>Team Page Challenge</title>
+	<style type="text/css">
+		@font-face{
+			font-family: PT-Serif;
+			src: url('./fonts/PTSerif-Bold.ttf');
+		}	
+		@font-face{
+			font-family: Poppins-bold;
+			src: url('./fonts/Poppins-Bold.ttf');
+		}	
+		@font-face{
+			font-family: Poppins-regular;
+			src: url('./fonts/Poppins-Regular.ttf');
+		}
+		body{
+			box-sizing: border-box;
+		}
+		.heading{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+		.container{
+			padding-left: 240px;
+			padding-right: 230px;
+		}
+		.content{
+			display: flex;
+			/**/
+			justify-content: space-around;
+			flex-wrap:  wrap;
+			
+		}
+		.text-caption{
+			padding-top: 109px;
+			padding-left: 243px;
+		}
+		.text-message{
+			padding-top: 109px;
+			padding-left: 215px;
+		}
+
+		h1{
+			font-family: PT-Serif;
+			font-size: 36px;
+			font-weight: 700;
+			font-style: normal;
+			letter-spacing: -0.045em;
+			margin: 0;
+			padding: 0; 
+		}		
+		.text-title{
+			font-family: Poppins-bold;
+			font-size: 18px;
+			font-weight: 600;
+		}	
+		.text-paragraph{
+			font-family: Poppins-regular;
+			font-size: 18px;
+			width: 439px;
+		}
+
+		.card{			
+			position: relative;
+			margin-right: 29px;
+			margin-top: 85px;
+		}
+		
+		.card>img{
+			width: 237px;
+			height: 341px;
+		}
+		.card>p.name{
+			font-family: Poppins-bold;
+			font-weight: 600;
+			font-size: 18px;
+			margin-top: 15px;
+		}
+		.card>span.job{
+			display: inline;
+			position: absolute;
+			top: 0;
+			padding-left: 10px;
+			font-family: PT-Serif;
+			font-size: 12px;
+			font-weight: 400;
+			text-transform: uppercase;
+			writing-mode: vertical-rl;
+			
+		}
+		.content>div.card:nth-child(3n-1) {
+			margin-top: 174px;
+		}
+
+		@media only screen and (max-width: 600px){
+			.text-message{
+				padding-top: 38px;
+				padding-left: 12px;
+			}
+			.text-caption{
+				padding-top: 17px;
+				padding-left: 12px;
+			}
+			.container{
+				padding-left: 19px;
+				padding-right: 17px;
+			}
+			.card>img{
+				width: 138px;
+				height: 209px;
+			}
+			.content>div.card:nth-child(3n-1) {
+				margin-top: 87px;
+			}
+			.content>div.card:nth-child(2n) {
+				margin-top: 127px;				
+			}			
+		}
+
+	</style>
+</head>
+<body>
+	<div class="heading">
+		<div class="text-caption">
+			<h1>The creative crew</h1>
+		</div>
+		<div class="text-message">
+			<p class="text-title">Who we are</p>
+			<p class="text-paragraph">We are team of creatively diverse.  driven.  innovative individuals working in various locations from the world.</p>
+		</div>
+	</div>
+	<div class="container">
+		<div class="content">
+			<div class="card">
+				<img src="img/photo2.png">
+				<span class="job">Product owner</span>
+				<p class="name">Mi futura esposa</p>				
+			</div>
+			
+			<div class="card">
+				<img src="img/photo1.png">
+				<span class="job">Product owner</span>
+				<p class="name">Carolina Bravo</p>				
+			</div>
+
+			<div class="card">
+				<img src="img/photo3.png">
+				<span class="job">Product owner</span>
+				<p class="name">Marisol</p>				
+			</div>	
+			<div class="card">
+				<img src="img/photo4.png">
+				<span class="job">Product owner</span>
+				<p class="name">Ailaht Selasor</p>				
+			</div>
+			
+			<div class="card">
+				<img src="img/photo5.png">
+				<span class="job">Product owner</span>
+				<p class="name">Bill Mahoney</p>				
+			</div>
+
+			<div class="card">
+				<img src="img/photo6.png">
+				<span class="job">Product owner</span>
+				<p class="name">Bill Mahoney</p>				
+			</div>	
+		</div>
+	</div>
+
+</body>
+</html>
